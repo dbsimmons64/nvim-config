@@ -16,11 +16,14 @@ return {
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				elixir = { "mix" },
+				eelixir = { "mix" },
+				heex = { "mix" },
+				surface = { "mix" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
-				timeout_ms = 1000,
+				timeout_ms = 5000,
 			},
 		})
 
