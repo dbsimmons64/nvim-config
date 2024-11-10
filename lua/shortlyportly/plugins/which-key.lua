@@ -15,6 +15,7 @@ return {
 			{ "<leader>h", group = "Git" },
 			{ "<leader>n", group = "Clear Search" },
 			{ "<leader>t", group = "Tabs" },
+			{ "<leader>T", group = "Test" },
 			{ "<leader>w", group = "Window" },
 			{ "<leader>x", group = "Trouble" },
 		})
