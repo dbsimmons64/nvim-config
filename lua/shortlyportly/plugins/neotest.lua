@@ -8,6 +8,8 @@ return {
 		"jfpedroza/neotest-elixir",
 	},
 
+	-- To ensure getcwd worked I had to install project.nvim.
+
 	keys = {
 		{ "<leader>Tt", ":lua require('neotest').run.run()<CR>", desc = "Run nearest test", mode = "n", silent = true },
 		{
@@ -27,13 +29,6 @@ return {
 		{
 			"<leader>Td",
 			":lua require('neotest').output.open()<CR>",
-			desc = "Test Summary",
-			mode = "n",
-			silent = true,
-		},
-		{
-			"<leader>T<CR>",
-			":lua require('neotest').summary.toggle()<CR>",
 			desc = "Test Summary",
 			mode = "n",
 			silent = true,
