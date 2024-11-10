@@ -1,0 +1,7 @@
+return {
+	"tpope/vim-dadbod",
+	config = function()
+		-- Basic vim-dadbod configuration
+		vim.g.db_ui_win_position = "left" -- Database UI position
+	end,
+}
