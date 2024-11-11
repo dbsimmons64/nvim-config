@@ -12,7 +12,8 @@ return {
 		wk.add({
 			{ "<leader>e", group = "NeoTree" },
 			{ "<leader>f", group = "Find (Telescope)" },
-			{ "<leader>h", group = "Git" },
+			{ "<leader>G", group = "Git" },
+			{ "<leader>l", group = "Lanaguage Server" },
 			{ "<leader>n", group = "Clear Search" },
 			{ "<leader>t", group = "Tabs" },
 			{ "<leader>T", group = "Test" },
