@@ -53,3 +53,8 @@ end
 
 -- Command to trigger the popup
 vim.api.nvim_create_user_command("HelloWorldPopup", open_hello_world_popup, {})
+
+-- Change the theme comment colour from gray (tricky to read) to red.
+-- vim.api.nvim_set_hl(0, "Comment", { fg = "#FF737D", italic = true })
+
+vim.cmd.colorscheme("astrodark") -- Replace "gruvbox" with your color scheme name

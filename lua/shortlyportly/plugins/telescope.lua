@@ -14,12 +14,14 @@ return {
 		telescope.setup({
 			defaults = {
 				layout_config = {
-					width = 0.75,
-					height = 0.75,
-					prompt_position = "top",
+					horizontal = { prompt_position = "top", preview_width = 0.55 },
+					vertical = { mirror = false },
+					width = 0.87,
+					height = 0.80,
+					preview_cutoff = 120,
 				},
 				sorting_strategy = "ascending",
-				path_display = { "smart" },
+				path_display = { "truncate" },
 				mappings = {
 					i = {
 						["<C-k>"] = actions.move_selection_previous, -- move to prev result

@@ -17,3 +17,7 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+
+-- Keymappings for toggling comments in both normal and visual (block) mode.
+keymap.set("n", "<leader>c", ":normal gcc<CR>", { desc = "Toggle comment line" })
+keymap.set("v", "<leader>c", "<Esc>:normal gvgc<CR>", { desc = "Toggle comment block" })
