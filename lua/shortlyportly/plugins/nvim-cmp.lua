@@ -41,7 +41,6 @@ return {
 					luasnip.lsp_expand(args.body)
 				end,
 			},
-
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 				["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -53,8 +52,8 @@ return {
 			}),
 			-- sources for autocompletion
 			sources = cmp.config.sources({
-				{ name = "nvim_lsp" },
 				{ name = "luasnip" }, -- snippets
+				{ name = "nvim_lsp" },
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
 			}),
